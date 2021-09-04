@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "..\\fg"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "сайт для светафора"
+  }
+}

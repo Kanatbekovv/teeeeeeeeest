@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./magaz.css">
+   
+   
+</head>
+
+<body>
+    
+    <div class="banner-container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="./index.html">  <img src="./img/Svetofor-logo.png" alt="" /></a>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="./about.html">Виды светафоров</a></li>
+              <li><a href="./amd.html">правилы</a></li>
+              <li><a href="./index.html">цвета</a></li>
+              <li><a href="#">о нас</a></li>
+              <li>
+                  
+                <a href="./card.html"
+                  ><img id="img2" src="./img/icons8-buy-40.png"  alt=""
+                /></a>
+              </li>
+            
+            </ul>
+          </nav>
+        </div>
+        <section id="magaz">
+         <div class="magaz-wrapper">
+            <div class="imgs">
+            <img class="car3" src="./images/pngfind.com-mercedes-png-1326702.png" alt="">
+        </div>
+             <div class="magaz-inner">
+                 <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod neque voluptates laboriosam nihil, esse reiciendis, exercitationem eaque molestiae libero blanditiis veritatis, omnis amet magni ex facilis molestias ipsa sapientedfedfefeeeeeeeeeeeeeeeeeeeeeeeeeeeeee officiarhguihgeghgugbfurbhuerergburgewfwfwwfwfwfwffeffefefefe
+                     fefefewfwffffffffffffffffffffffffffffffffffffghrthtrhtyjkytjtyjhjhjhthj hjiojhothtory
+                 </h1>
+                 <button class="btn-magaz">Подробнее</button>
+                </div>
+                
+         </div>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <script>
+           $(function(){
+           $('.btn-magaz').click(function(){
+               $('.car3').clone().css({
+                   'position': 'absolute',
+                    'z-index': 100,
+                    'width' : '30%',
+                    'left' : $('.car3').offset()['left'],
+                    'top' : $('.car3').offset()['top'],
+               }).appendTo('.magaz-inner').animate({
+                   top: $('#img2').offset()['top'],
+                   left: $('#img2').offset()['left'],
+                   opacity: 0,
+                   width: 40
+
+               },1000, function(){
+                $(this).remove();
+               })
+               
+           })
+           });
+       </script>
+</body>
+</html>
+
+    

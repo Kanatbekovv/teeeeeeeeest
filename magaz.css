@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: url();
+}
+
+.banner-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url(https://oir.mobi/uploads/posts/2021-03/1616579188_17-p-avtoservis-fon-19.jpg);
+}
+
+.navbar {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.logo img {
+  width: 110px;
+  cursor: pointer;
+  margin: 35px 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(194, 192, 192);
+  font-size: 15px;
+  padding: 5px 2px;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  border-bottom: 3px solid white;
+}
+
+.magaz-wrapper img {
+  margin-left: 50px;
+  width: 700px;
+  background-color: white;
+}
+
+.magaz-inner h1 {
+  width: 800px;
+  background-color: white;
+  border-radius: 25px;
+}
+.magaz-inner {
+  padding: 25px 25px;
+  background-color: white;
+
+  border-radius: 25px;
+}
+
+.imgs {
+  background-color: white;
+}
+
+.magaz-wrapper {
+  border-radius: 25px;
+  padding: 60px 35px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 80px auto;
+  background-color: white;
+  box-shadow: 0 0 25px gray;
+}
+
+.magaz {
+  position: relative;
+}
+
+.btn-magaz {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #0071f0;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}

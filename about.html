@@ -1,0 +1,126 @@
+<link rel="stylesheet" href="./stylesss.css" />
+
+<body>
+  <div class="banner-container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="./index.html"><img src="./img/Svetofor-logo.png" alt="" /></a>
+      </div>
+      <nav>
+        <ul>
+            
+          <li><a href="./index.html">Виды светафоров</a></li>
+          <li><a href="./amd.html">правилы</a></li>
+          <li><a href="./magaz.html">цвета</a></li>
+          <li><a href="#">о нас</a></li>
+          <li>
+            <a href="./card.html"
+              ><img src="./img/icons8-buy-40.png" class="img2" alt=""
+            /></a>
+          </li>
+          
+        </ul>
+      </nav>
+    </div>
+    <div class="text15">
+        <h1 class="aiii">через кнопкуууу</h1>
+    </div>
+    <div id="controlPanel">
+      <h1 id="AllButton" class="button">кнопка</h1>
+    </div>
+    <div id="traffic-light">
+      <div id="stopLight" class="bulb"></div>
+      <div id="slowLight" class="bulb"></div>
+      <div id="goLight" class="bulb"></div>
+    </div>
+    <script>
+      document.getElementById("AllButton").onclick = switchAll;
+
+      function illuminateRed() {
+        clearLights();
+        document.getElementById("stopLight").style.backgroundColor = "red";
+      }
+
+      function illuminateOrange() {
+        clearLights();
+        document.getElementById("slowLight").style.backgroundColor = "orange";
+      }
+
+      function illuminateGreen() {
+        clearLights();
+        document.getElementById("goLight").style.backgroundColor = "green";
+      }
+      function illuminateRedOrange() {
+        clearLights();
+        document.getElementById("stopLight").style.backgroundColor = "red";
+        document.getElementById("slowLight").style.backgroundColor = "orange";
+      }
+      function illuminateBlack() {
+        clearLights();
+      }
+      function clearLights() {
+        document.getElementById("stopLight").style.backgroundColor = "black";
+        document.getElementById("slowLight").style.backgroundColor = "black";
+        document.getElementById("goLight").style.backgroundColor = "black";
+      }
+
+      var clickTimes = 0;
+      var change = 1;
+      function switchAll() {
+        clickTimes++;
+        switch (clickTimes) {
+          case 1:
+            clearLights();
+            document.getElementById("stopLight").style.backgroundColor = "red";
+            break;
+          case 2:
+            clearLights();
+            document.getElementById("stopLight").style.backgroundColor = "red";
+            document.getElementById("slowLight").style.backgroundColor =
+              "orange";
+            break;
+          case 3:
+            clearLights();
+            document.getElementById("goLight").style.backgroundColor = "green";
+            break;
+          case 4:
+            clearLights();
+            document.getElementById("slowLight").style.backgroundColor =
+              "orange";
+            break;
+          case 5:
+            clearLights();
+            document.getElementById("stopLight").style.backgroundColor = "red";
+            break;
+          case 6:
+            document.getElementById("stopLight").style.backgroundColor =
+              "black";
+            document.getElementById("slowLight").style.backgroundColor =
+              "black";
+            document.getElementById("goLight").style.backgroundColor = "black";
+
+            clickTimes = 0;
+            break;
+        }
+      }
+    </script>
+    <div class="text12">
+        <h1 class="ai">с задержкой 1,5с</h1>
+    <div class="cont">
+        
+      <div class="circle red" color="red"></div>
+      <div class="circle" color="yellow"></div>
+      <div class="circle" color="green"></div>
+    </div>
+</div>
+    <script src="./java.js"></script>
+    <div class="text13">
+    <h1 class="aii">не выключается</h1>
+</div>
+    <div class="conts">
+      <div class="circle red" color="red"></div>
+      <div class="circle yellow" color="yellow"></div>
+      <div class="circle green" color="green"></div>
+    </div>
+  
+</body>
